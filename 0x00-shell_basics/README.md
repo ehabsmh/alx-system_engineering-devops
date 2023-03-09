@@ -8,3 +8,4 @@ Script 6:  Creates a folder in the /tmp directory.
 Script 7:  Moves a file from place to another.
 Script 8:  Deletes the file betty.
 Script 9:  Deletes a directory.
+Script 10: Changes the working directory to the previous one
