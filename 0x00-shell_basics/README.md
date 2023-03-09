@@ -15,3 +15,4 @@ Script 13: Creates a symbolic link to /bin/ls
 Script 14: Creates a copies of several HTML files from working DIR to parent DIR that did not exist in the parent of the working DIR
 Script 15: Moves all files beginning with an uppercase letter
 Script 16: Delete files with wildcard
+Script 17: Creates a tree DIRS
