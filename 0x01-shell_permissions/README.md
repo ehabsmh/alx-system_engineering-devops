@@ -7,3 +7,4 @@ Script 5: Adds execute permission
 Script 6: Adds execute permission to some Modes and read perm to some MODES
 Script 7: Adds execute permission to some Modes 
 Script 8: Sets the jamesbond permission to a file
+Script 9: Sets the mode of certain file
