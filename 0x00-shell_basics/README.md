@@ -12,3 +12,4 @@ Script 10: Changes the working directory to the previous one
 Script 11: Lists several directories with their hidden contents and in long format.
 Script 12: Prints the type of the file
 Script 13: Creates a symbolic link to /bin/ls
+Script 14: Creates a copies of several HTML files from working DIR to parent DIR that did not exist in the parent of the working DIR
