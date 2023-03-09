@@ -16,3 +16,4 @@ Script 14: Creates a copies of several HTML files from working DIR to parent DIR
 Script 15: Moves all files beginning with an uppercase letter
 Script 16: Delete files with wildcard
 Script 17: Creates a tree DIRS
+Script 18: LS with commas
