@@ -4,3 +4,4 @@ Script 2: Prints all the groups the current user is part of
 Script 3: Changes the owner of the file
 Script 4: Creates an empty file.
 Script 5: Adds execute permission
+Script 6: Adds execute permission to some Modes and read perm to some MODES
