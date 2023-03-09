@@ -10,3 +10,4 @@ Script 8:  Deletes the file betty.
 Script 9:  Deletes a directory.
 Script 10: Changes the working directory to the previous one
 Script 11: Lists several directories with their hidden contents and in long format.
+Script 12: Prints the type of the file
