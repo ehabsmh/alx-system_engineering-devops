@@ -6,3 +6,4 @@ Script 4:  Displays the current directory contents including hidden files with a
 Script 5:  Displays current directory contents (long format, hidden files and with user and group IDs displayed numerically)
 Script 6:  Creates a folder in the /tmp directory.
 Script 7:  Moves a file from place to another.
+Script 8:  Deletes the file betty.
