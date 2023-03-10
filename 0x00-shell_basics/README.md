@@ -17,3 +17,4 @@ Script 15: Moves all files beginning with an uppercase letter
 Script 16: Delete files with wildcard
 Script 17: Creates a tree DIRS
 Script 18: LS with commas
+Script 19: Manipulate the file command
