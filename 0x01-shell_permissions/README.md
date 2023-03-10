@@ -10,3 +10,4 @@ Script 8: Sets the jamesbond permission to a file
 Script 9: Sets the mode of certain file
 Script 10: Sets the mode of some file the same as another
 Script 11: Adds exe permission to all subDIR
+Script 12: Creates a dir with permission
