@@ -14,4 +14,5 @@ Script 12: Creates a dir with permission
 Script 13: Changes the group owner
 Script 14: Changes the owner and group owner for all files and DIR'S
 Script 15: Changes the owner and the group owner with symbolic link
+Script 16: Changes the owner and the group owner if only
 Script 17: Display STARWARS EPISODE
