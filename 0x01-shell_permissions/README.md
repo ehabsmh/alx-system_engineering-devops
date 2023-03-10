@@ -12,3 +12,4 @@ Script 10: Sets the mode of some file the same as another
 Script 11: Adds exe permission to all subDIR
 Script 12: Creates a dir with permission
 Script 13: Changes the group owner
+Script 14: Changes the owner and group owner for all files and DIR'S
