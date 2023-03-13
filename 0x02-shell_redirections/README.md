@@ -19,3 +19,4 @@ Script 17: Displays all the lines that does not match a pattern
 Script 18: Displays all lines starting with a letter
 Script 19: Replaces chars
 Script 20: Removes letters
+Script 21: Reverse input
