@@ -11,4 +11,5 @@ Script 9: Duplicates the last line of a file
 Script 10: Deletes specific files
 Script 11: Counting DIR'S
 Script 12: Displays 10 newest files
-Script 13: Display words that appear only once
+Script 13: Displays words that appear only once
+Script 14: Displays lines containing specific pattern
