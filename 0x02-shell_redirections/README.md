@@ -6,3 +6,4 @@ Script 4: Displays the last 10 lines of a file
 Script 5: Displays the first 10 lines of a file
 Script 6: Displays the third line of a file
 Script 7: Creates a special named file
+Script 8: Sending output to a file
