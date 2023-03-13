@@ -13,3 +13,4 @@ Script 11: Counting DIR'S
 Script 12: Displays 10 newest files
 Script 13: Displays words that appear only once
 Script 14: Displays lines containing specific pattern
+Script 15: Displays num of lines based on pattern
