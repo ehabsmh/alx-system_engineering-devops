@@ -20,3 +20,4 @@ Script 18: Displays all lines starting with a letter
 Script 19: Replaces chars
 Script 20: Removes letters
 Script 21: Reverse input
+Script 22: Displays users and their home dirs, sorted by users
