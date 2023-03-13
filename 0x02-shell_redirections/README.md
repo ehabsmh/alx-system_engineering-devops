@@ -17,3 +17,4 @@ Script 15: Displays num of lines based on pattern
 Script 16: Displays 3 lines after every line from the pattern
 Script 17: Displays all the lines that does not match a pattern
 Script 18: Displays all lines starting with a letter
+Script 19: Replace chars
