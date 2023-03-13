@@ -8,3 +8,4 @@ Script 6: Displays the third line of a file
 Script 7: Creates a special named file
 Script 8: Sending output to a file
 Script 9: Duplicates the last line of a file
+Script 10: Deletes specific files
