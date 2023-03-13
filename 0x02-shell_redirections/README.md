@@ -14,3 +14,4 @@ Script 12: Displays 10 newest files
 Script 13: Displays words that appear only once
 Script 14: Displays lines containing specific pattern
 Script 15: Displays num of lines based on pattern
+Script 16: Displays 3 lines after every line from the pattern
