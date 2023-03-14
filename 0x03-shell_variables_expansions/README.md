@@ -12,3 +12,4 @@ Script 010: Display the result of a variable to the power of another variable
 Script 011: Converts a number from base 2 to base 10.
 Script 012: Prints all possible combinations of two letters, except oo.
 Script 013: Prints a number with two decimal places, followed by a new line.
+Script 014: Converts a number from base 10 to base 16.
