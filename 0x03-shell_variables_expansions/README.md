@@ -5,3 +5,4 @@ Script 3: Counts the number of DIRS in PATH
 Script 4: Lists env variables
 Script 5: Lists all local variables and environment variables, and functions
 Script 6: Creates a new local var
+Script 7: Creates a script that creates a new global variable.
