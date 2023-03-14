@@ -7,3 +7,4 @@ Script 5: Lists all local variables and environment variables, and functions
 Script 6: Creates a new local var
 Script 7: Creates a script that creates a new global variable.
 Script 8: Print the addition with a variable value.
+Script 9: prints the result of a variable divided by another variable, followed by a new line.
