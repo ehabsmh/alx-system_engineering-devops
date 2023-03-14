@@ -9,3 +9,4 @@ Script 7: Creates a script that creates a new global variable.
 Script 8: Print the addition with a variable value.
 Script 9: prints the result of a variable divided by another variable, followed by a new line.
 Script 010: Display the result of a variable to the power of another variable
+Script 011: Converts a number from base 2 to base 10.
