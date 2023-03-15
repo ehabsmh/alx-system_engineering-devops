@@ -23,3 +23,4 @@ Script 21: Reverse input
 Script 22: Displays users and their home dirs, sorted by users
 Script 23: Finds all empty files and directories in the currrent directory and all subDIR'S
 Script 24: Lists files with specific format
+Script 25: Script that takes first letter of every line and display it as a meaningful word 
