@@ -2,7 +2,9 @@
 # This script displays The content of the current directory in a list format
 # Where only the part of the name after the first dash is displayed
 
-for i in ./*
+list="$(ls -1 ./)"
+
+for item in ${list}
 do
-	find "${i}" | tr -d "/" | cut -c 2- | cut -d "." -f 1
+	cut -d "-" -f 2 <<< "${item}"
 done
