@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# loops from 1 to 10 and displays specific sentences at specific n iteration
+
+i=1
+
+# loop from 1 to 10
+while [ $i -le 10 ]
+do
+
+	if [ "${i}" -eq 4 ]; then
+		echo "bad luck"
+		((i++))
+	
+	elif [ "${i}" -eq 8 ]; then
+		echo "good luck"
+		((i++))
+	else
+		echo "Best School"
+		((i++))
+	
+	fi
+done
