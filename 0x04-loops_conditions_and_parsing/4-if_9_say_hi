@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# displays Best School 10 times, but for the 9th display Hi
+
+i=1
+
+while [ $i -le 10 ]
+do
+	if [ $i -eq 9 ]; then
+		echo "Hi"
+		((i++))
+	fi
+
+	echo "Best School"
+	((i++))
+done
