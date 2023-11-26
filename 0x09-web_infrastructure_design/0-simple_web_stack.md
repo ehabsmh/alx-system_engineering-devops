@@ -1,7 +1,6 @@
 # Some specifics about this infrastructure
 
 ## What is a server
-
 A server is a powerful computer hardware or software that provides a service to other computers known as clients.
 ---
 
