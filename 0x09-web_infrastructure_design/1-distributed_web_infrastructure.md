@@ -1,18 +1,24 @@
 # some specifics about this infrastructure:
+## What distribution algorithm your load balancer is configured with and how it works?
+It is configured with the robin-round algorithm, Requests are distributed in a circular sequence to the servers. Each new request goes to the next server in line, forming a loop. It's a simple and fair approach, ensuring each server gets an equal share of the load.
 
-## What distribution algorithm your load balancer is configured with and how it works
-It is configured with the robin-round algorithm,
-Requests are distributed in a circular sequence to the servers. Each new request goes to the next server in line, forming a loop. It's a simple and fair approach, ensuring each server gets an equal share of the load.
 ---
-## Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both
+
+## Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both?
 The HAProxy load-balancer is enabling an Active-Passive setup rather than an Active-Active setup. In an Active-Active setup, the load balancer distributes workloads across all nodes in order to prevent any single node from getting overloaded. Because there are more nodes available to serve, there will also be a marked improvement in throughput and response times. On the other hand, in an Active-Passive setup, not all nodes are going to be active (capable of receiving workloads at all times). In the case of two nodes, for example, if the first node is already active, the second node must be passive or on standby. The second or the next passive node can become an active node if the preceding node is inactive.
+
 ---
+
 ## How a database Primary-Replica (Master-Slave) cluster works
 A Primary-Replica setup configures one server to act as the Primary server and the other server to act as a Replica of the Primary server. However, the Primary server is capable of performing read/write requests whilst the Replica server is only capable of performing read requests. Data is synchronized between the Primary and Replica servers whenever the Primary server executes a write operation.
+
 ---
+
 ## What is the difference between the Primary node and the Replica node in regard to the application
 The Primary node is responsible for all the write operations the site needs whilst the Replica node is capable of processing read operations, which decreases the read traffic to the Primary node.
+
 ---
+
 # issues with this infrastructure:
 
 ## Where are SPOF
