@@ -4,7 +4,7 @@
 
 Using Puppet, create a file in /tmp.
 
-### Requirements:
+#### Requirements:
 
 - File path is /tmp/school
 - File permission is 0744
@@ -16,7 +16,7 @@ Using Puppet, create a file in /tmp.
 
 Using Puppet, install flask from pip3.
 
-### Requirements:
+#### Requirements:
 
 - Install flask.
 - Version must be 2.1.0
@@ -25,7 +25,7 @@ Using Puppet, install flask from pip3.
 
 Using Puppet, create a manifest that kills a process named killmenow.
 
-### Requirements:
+#### Requirements:
 
 - Must use the exec Puppet resource.
 - Must use pkill.
