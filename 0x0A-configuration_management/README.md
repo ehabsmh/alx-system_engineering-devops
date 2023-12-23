@@ -12,6 +12,8 @@ Using Puppet, create a file in /tmp.
 - File group is www-data
 - File contains I love Puppet
 
+---
+
 ## [1. Install a package](https://github.com/ehabsmh/alx-system_engineering-devops/blob/main/0x0A-configuration_management/1-install_a_package.pp)
 
 Using Puppet, install flask from pip3.
@@ -20,6 +22,8 @@ Using Puppet, install flask from pip3.
 
 - Install flask.
 - Version must be 2.1.0
+
+---
 
 ## [2. Execute a command](https://github.com/ehabsmh/alx-system_engineering-devops/blob/main/0x0A-configuration_management/2-execute_a_command.pp)
 
