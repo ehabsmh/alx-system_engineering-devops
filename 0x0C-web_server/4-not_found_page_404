@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# This script configures nginx web server so that /redirect_me is redirecting to another page.
+
+apt-get -y update
+apt-get -y install nginx
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+
+redirected_location="\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}"
+file=/etc/nginx/sites-available/default
+
+sed -i "42i\ $redirected_location" "$file"
+
+echo "Ceci n'est pas une page" > /usr/share/nginx/html/custom_404.html
+
+notfound_location="\terror_page 404 /custom_404.html;\n\n\tlocation = /custom_404.html {\n\t\troot /usr/share/nginx/html;\n\t\tinternal;\n\t}\n"
+
+sed -i "42i\ $notfound_location" "$file"
+
+service nginx restart
