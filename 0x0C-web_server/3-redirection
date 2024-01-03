@@ -8,6 +8,6 @@ echo "Hello World!" > /var/www/html/index.nginx-debian.html
 redirected_location="\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4\n\t}"
 file=/etc/nginx/sites-available/default
 
-sed -i "42i\ $redirected_location" "file"
+sed -i "42i\ $redirected_location" "$file"
 
 service nginx reload
