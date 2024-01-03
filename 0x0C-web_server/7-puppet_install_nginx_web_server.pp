@@ -1,7 +1,8 @@
 # Install Nginx web server (w/ Puppet)
 
 package {'nginx':
-	provider => 'apt-get -y',
+	ensure => installed,
+	name   => 'nginx',
 }
 
 file {'index.nginx-debian.html':
