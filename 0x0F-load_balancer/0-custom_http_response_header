@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# This script configures nginx web server so that /redirect_me is redirecting to another page.
+
+# Install `nginx`
+apt-get -y update
+apt-get -y install nginx
+
+# Add content to the root path
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+
+# Configure the server to have a redirect route
+redirected_location="location /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}"
+file=/etc/nginx/sites-available/default
+sed -i "/server_name _/a $redirected_location" "$file"
+
+# Configure the server to have a 404 custom page
+echo "Ceci n'est pas une page" > /usr/share/nginx/html/custom_404.html
+notfound_location="error_page 404 /custom_404.html;\n\n\tlocation = /custom_404.html {\n\t\troot /usr/share/nginx/html;\n\t\tinternal;\n\t}\n"
+sed -i "/server_name _/a $notfound_location" "$file"
+
+# Configure the server to have the hostname server included in the header response
+header_variable="add_header X-Served-By $HOSTNAME;"
+sed -i "/server_name _/a $header_variable" "$file"
+
+nginx -t
+service nginx restart
