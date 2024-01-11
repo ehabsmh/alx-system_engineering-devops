@@ -2,7 +2,7 @@
 # Install my load balancer and add load balancer for my two servers
 
 apt-get -y update
-apt-get -y install haproxy=2.9.\*
+apt-get -y install haproxy
 
 echo "
 listen 348352_servers
