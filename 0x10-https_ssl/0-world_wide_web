@@ -1,14 +1,23 @@
 #!/usr/bin/env bash
 # display information about subdomains. Arguments =  domain: type=> string, what=> domain name to audit, mandatory=> yes. Subdomain = type=> string, what=> specific subdomain to audit, mandatory => no. Output: The subdomain [SUB_DOMAIN] is a [RECORD_TYPE] record and points to [DESTINATION]
 
-if [ "$#" -eq 1 ];
-then
-	subdomain=("www" "lb-01" "web-01" "web-02")
-	for i in "${subdomain[@]}"
-	do
-	dig "$i"."$1"| grep -A1 'ANSWER SECTION:' | awk 'NR==2{SUB=$1; REC=$4; DEST=$5; split(SUB, subx, "."); print "The subdomain " subx[1], "is a " REC, "record and points to " DEST}';
-	done
-elif [ "$#" -eq 2 ];
-then
-	dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | awk 'NR==2{SUB=$1; REC=$4; DEST=$5; split(SUB, subx, "."); print "The subdomain " subx[1], "is a " REC, "record and points to " DEST}';
+subdomains_all=( "www" "lb-01" "web-01" "web-02" )
+
+runDig () {
+    subdomain=$1
+    domain=$2
+
+    dig "$subdomain.$domain" | grep -A1 'ANSWER SECTION:' | tail -1 | awk -v s="$subdomain" 'BEGIN { FS = " " } ; { print "The subdomain " s " is a " $4 " record and points to " $5 }'
+}
+
+if [ $# -eq 1 ]; then
+    domain="$1"
+    for i in "${subdomains_all[@]}"
+    do
+	runDig "$i" "$domain"
+    done
+elif [ $# -eq 2 ]; then
+    domain="$1"
+    subdomain="$2"
+    runDig "$subdomain" "$domain"
 fi
