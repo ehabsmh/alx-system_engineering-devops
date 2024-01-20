@@ -1,0 +1,18 @@
+defaults
+        mode http
+        timeout connect 10s
+        timeout client  15s
+        timeout server  15s
+        timeout http-request 10s
+
+frontend clients-348352
+        bind *:80
+        bind *:443 ssl crt /etc/haproxy/certs/www.dev-ehab.tech.pem
+	redirect scheme https code 301 if !{ ssl_fc }
+        mode http
+        default_backend servers-348352
+
+backend servers-348352
+        balance roundrobin
+        server 348352-web-01 54.242.168.59:80 check
+        server 348352-web-02 52.206.252.73:80 check
