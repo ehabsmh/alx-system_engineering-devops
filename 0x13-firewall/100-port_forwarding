@@ -1,0 +1,19 @@
+# Firewall installation
+sudo apt-get update
+sudo apt-get install ufw
+
+# Block all incoming traffic
+sudo ufw default deny incoming
+
+# Except the following TCP ports
+sudo ufw allow 22/tcp	  # SSH
+sudo ufw allow 443/tcp	  # HTTPS
+sudo ufw allow 80/tcp	  # HTTP
+
+# Enable the firewall
+sudo ufw enable
+
+# Check status
+sudo ufw status
+
+sudo iptables --table nat --append PREROUTING --protocol tcp --dport 8080 --jump REDIRECT --to 80
