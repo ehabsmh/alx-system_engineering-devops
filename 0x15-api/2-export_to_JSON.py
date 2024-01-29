@@ -37,6 +37,6 @@ if __name__ == "__main__":
             json.dump(emp_format, wf)
 
     except IndexError:
-        print("Usage: ./0-gather_data_from_an_API.py EMP_ID")
+        print("Usage: ./2-export_to_JSON.py EMP_ID")
     except Exception:
         print("Error while fetching data")
