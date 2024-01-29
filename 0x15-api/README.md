@@ -15,3 +15,13 @@
 - Exports the data that we got in [0. Gather data from an API](https://github.com/ehabsmh/alx-system_engineering-devops/blob/main/0x15-api/0-gather_data_from_an_API.py) in the CSV format ("USER_ID","USERNAME","TASK_COMPLETED_STATUS","TASK_TITLE").
 
 - File name must be: USER_ID.csv
+
+---
+
+## [2. Export to JSON](https://github.com/ehabsmh/alx-system_engineering-devops/blob/main/0x15-api/2-export_to_JSON.py)
+
+- Exports the data that we got in [0. Gather data from an API](https://github.com/ehabsmh/alx-system_engineering-devops/blob/main/0x15-api/0-gather_data_from_an_API.py) in the JSON format
+
+- Format must be: { "USER_ID": [{"task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS, "username": "USERNAME"}, {"task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS, "username": "USERNAME"}, ... ]}
+
+- File name must be: USER_ID.csv
