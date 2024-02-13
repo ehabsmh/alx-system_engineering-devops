@@ -19,10 +19,9 @@ if __name__ == "__main__":
         todos = requests.get(todos_url, params="userId={}".
                              format(emp_id)).json()
 
-        # Get completed todos made by specific employee ( by id)
-
         emp_username = emp.get("username")
 
+        # Data formatting to be written to a json file
         emp_format = {
             emp_id: [
                 {
@@ -33,6 +32,7 @@ if __name__ == "__main__":
                 for todo in todos]
         }
 
+        # Inserting the data to the json file
         with open(f"{emp_id}.json", "w") as wf:
             json.dump(emp_format, wf)
 
