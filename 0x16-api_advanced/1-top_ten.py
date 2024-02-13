@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Query Reddit API for number of subscribers for a given subreddit"""
+"""Queries the Reddit API and prints the titles"""
 import requests
 
 
@@ -12,12 +12,12 @@ def top_ten(subreddit):
     headers = requests.utils.default_headers()
     headers.update({'User-Agent': 'My User Agent 1.0'})
 
-    response = requests.get(url, headers=headers, params={"limit": 9}).json()
-    posts = response.get('data', {}).get('children')
+    response = requests.get(url, headers=headers, params={"limit": 10}).json()
+    top_ten_posts = response.get('data', {}).get('children', [])
 
-    if not posts:
+    if not top_ten_posts:
         print(None)
         return
 
-    for post in posts:
+    for post in top_ten_posts:
         print(post.get('data', {}).get('title'))
